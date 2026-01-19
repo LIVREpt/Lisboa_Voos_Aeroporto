@@ -8,7 +8,7 @@ def fetch_xml_to_df():
     previous_date = (datetime.today() - timedelta(days=1)).strftime('%Y-%m-%d')
     
     # Construct the URL with the previous date
-    url = f"https://ems02.emsbk.com/WebTrak/lis2/data/operation/hourly/{previous_date}"
+    url = f"https://webtrak-server-legacy.emsbk.com/WebTrak/lis2/data/operation/hourly/{previous_date}"
     
     # Set headers to mimic a browser request
     headers = {
